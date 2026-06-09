@@ -81,6 +81,14 @@ pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn lightg
 python seattle_collisions.py
 ```
 
+## Conclusion
+
+The objective was to predict Injury Collision versus Property Damage Only collision. Among the evaluated models, MLPClassifier provided the best overall balance, with a test AUC-ROC of 0.711 and accuracy of 0.679.
+
+The model achieved high recall for Injury Collisions (0.79), meaning it identified about 79% of injury cases, while specificity for Property Damage Only collisions was 0.63. However, precision for Injury Collisions was 0.48, indicating a relatively high false-positive rate.
+
+Overall, this model is useful as an early-warning support tool for traffic safety prioritization, but its predictions should support, not replace, operational decision-making.
+
 ## Notes And Limitations
 
 - The script contains hard-coded local paths from the original development environment.
